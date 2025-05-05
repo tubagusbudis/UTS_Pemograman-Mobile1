@@ -15,12 +15,15 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+//        Fungsi Tombol Register jika di klik akan berpindah ke halaman Register
         val btnToReister = findViewById<Button>(R.id.btnRegister)
         btnToReister.setOnClickListener {
+            Toast.makeText(this, "Register button clicked", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(Intent(this, RegisterActivity::class.java))
         }
 
+//        Fungsi Tombol Login jika di klik akan berpindah ke halaman Dashboard
         val btnLogin = findViewById<Button>(R.id.btnLogin)
         btnLogin.setOnClickListener {
             Toast.makeText(this, "Login button clicked Success", Toast.LENGTH_SHORT).show()

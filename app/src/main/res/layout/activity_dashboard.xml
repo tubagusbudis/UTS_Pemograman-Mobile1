@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:orientation="vertical"
-    android:background="#737373">
+    android:background="#21435d">
 
     <TextView
         android:id="@+id/headerTitle"

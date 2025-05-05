@@ -16,11 +16,13 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
+//        Deklarasi variabel
         val txtTitle = findViewById<TextView>(R.id.txtTitle)
         val edtName = findViewById<EditText>(R.id.edtName)
         val btnRegister = findViewById<Button>(R.id.btnRegister)
         val imgLogo = findViewById<ImageView>(R.id.imgLogo)
 
+//        Fungsi ketika tombol register di klik
         btnRegister.setOnClickListener {
             val name = edtName.text.toString()
             Log.d("Register", "User registered: $name")
@@ -29,6 +31,7 @@ class RegisterActivity : AppCompatActivity() {
             startActivity(Intent(this, DashboardActivity::class.java))
         }
 
+//        Fungsi untuk mengatur gambar
         val imageView: ImageView = findViewById(R.id.imgLogo)
         Glide.with(this)
             .load(R.mipmap.reglog)

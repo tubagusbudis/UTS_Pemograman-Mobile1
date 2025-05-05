@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class DashboardActivity : AppCompatActivity() {
 
+//    private lateinit var listView: ListView
             private lateinit var recyclerView: RecyclerView
             private lateinit var newsAdapter: NewsAdapter
             private lateinit var newsList: ArrayList<NewsItem>
@@ -21,6 +22,7 @@ class DashboardActivity : AppCompatActivity() {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_dashboard)
 
+//        Fungsi untuk membuat tampilan dashboard mengggunakan recyclerview dan arraylist
         recyclerView = findViewById(R.id.newsRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         newsList = arrayListOf(
