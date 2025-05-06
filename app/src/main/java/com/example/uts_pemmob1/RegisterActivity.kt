@@ -27,14 +27,14 @@ class RegisterActivity : AppCompatActivity() {
             val name = edtName.text.toString()
             Log.d("Register", "User registered: $name")
             Toast.makeText(this, "Register button clicked success", Toast.LENGTH_SHORT).show()
-            Toast.makeText(this, "Wellcome $name!", Toast.LENGTH_LONG).show()
-            startActivity(Intent(this, DashboardActivity::class.java))
+            Toast.makeText(this, "Your has been registered $name!", Toast.LENGTH_LONG).show()
+            startActivity(Intent(this, LoginActivity::class.java))
         }
 
 //        Fungsi untuk mengatur gambar
         val imageView: ImageView = findViewById(R.id.imgLogo)
         Glide.with(this)
-            .load(R.mipmap.reglog)
+            .load(R.drawable.logo_fix)
             .circleCrop()
             .into(imageView)
     }
